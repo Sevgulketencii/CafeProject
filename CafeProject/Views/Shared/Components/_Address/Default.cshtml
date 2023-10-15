@@ -1,0 +1,31 @@
+﻿@model List<Address>
+
+<div class="col-lg-6 align-self-center">
+    @foreach (var item in Model)
+    {
+        <div class="left-text-content">
+            <div class="section-heading">
+                <h6>İletişim</h6>
+                <h2>@item.Title</h2>
+            </div>
+            <p>@item.Description</p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="phone">
+                        <i class="fa fa-phone"></i>
+                        <h4>Telefon</h4>
+                        <span><a href="#">@item.Phone1</a><br><a href="#">@item.Phone2</a></span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="message">
+                        <i class="fa fa-envelope"></i>
+                        <h4>E-mail</h4>
+                        <span><a href="#">@item.Email1</a><br><a href="#">@item.Email2</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+</div>

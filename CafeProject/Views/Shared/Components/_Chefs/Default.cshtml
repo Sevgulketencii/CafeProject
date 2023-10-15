@@ -1,0 +1,40 @@
+﻿@model List<Chefs>
+<section class="section" id="chefs">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-center">
+                <div class="section-heading">
+                    <h6>Alanında En İyi Şeflere Sahibiz</h6>
+                    <h2>Sizin için en iyi malzemeler ile en iyi tabakları sunuyoruz</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        @foreach (var item in Model)
+        {
+           
+                <div class="col-lg-4">
+                    <div class="chef-item">
+                        <div class="thumb">
+                            <div class="overlay"></div>
+                            <ul class="social-icons">
+                                <li><a href="@item.ChefFacebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="@item.ChefX"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="@item.ChefInstagram"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                            <img src="@item.imageUrl" alt="Chef #1">
+                            @* <img src="~/theme/assets/images/chefs-01.jpg" alt="Chef #1"> *@
+                        </div>
+                        <div class="down-content">
+                            <h4>@item.Name</h4>
+                            <span>@item.ChefArea</span>
+                        </div>
+                    </div>
+                </div>
+
+           
+        }
+        </div>
+        
+    </div>
+</section>
