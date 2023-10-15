@@ -5,30 +5,30 @@
             @await Component.InvokeAsync("_Address")
             <div class="col-lg-6">
                 <div class="contact-form">
-                    <form id="contact" action="" method="post">
+                    <form id="contact" action="/Home/Reservation" method="post">
                         <div class="row">
                             <div class="col-lg-12">
-                                <h4>Table Reservation</h4>
+                                <h4>Rezervasyon</h4>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                                 <fieldset>
-                                    <input name="name" type="text" id="name" placeholder="Your Name*" required="">
+                                    <input name="Name" type="text" id="name" placeholder="Adınız" required="">
                                 </fieldset>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                                 <fieldset>
-                                    <input name="email" type="text" id="email" placeholder="Your Email Address" required="">
+                                    <input name="Email" type="text" id="email" placeholder="E-mail Adresiniz" required="">
                                 </fieldset>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                                 <fieldset>
-                                    <input name="phone" type="text" id="phone" placeholder="Phone Number*" required="">
+                                    <input name="Phone" type="text" id="phone" placeholder="Telefon Numaranız" required="">
                                 </fieldset>
                             </div>
                             <div class="col-md-6 col-sm-12">
                                 <fieldset>
-                                    <select value="number-guests" name="number-guests" id="number-guests">
-                                        <option value="number-guests">Number Of Guests</option>
+                                    <select value="number-guests" name="Guest" id="number-guests">
+                                        <option value="number-guests">Kişi Sayısı</option>
                                         <option name="1" id="1">1</option>
                                         <option name="2" id="2">2</option>
                                         <option name="3" id="3">3</option>
@@ -47,7 +47,7 @@
                             <div class="col-lg-6">
                                 <div id="filterDate2">
                                     <div class="input-group date" data-date-format="dd/mm/yyyy">
-                                        <input name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
+                                        <input name="Date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
                                         <div class="input-group-addon">
                                             <span class="glyphicon glyphicon-th"></span>
                                         </div>
@@ -56,22 +56,22 @@
                             </div>
                             <div class="col-md-6 col-sm-12">
                                 <fieldset>
-                                    <select value="time" name="time" id="time">
-                                        <option value="time">Time</option>
-                                        <option name="Breakfast" id="Breakfast">Breakfast</option>
-                                        <option name="Lunch" id="Lunch">Lunch</option>
-                                        <option name="Dinner" id="Dinner">Dinner</option>
+                                    <select value="time" name="Time" id="time">
+                                        <option value="time">Gün Aralığı</option>
+                                        <option name="Breakfast" id="Breakfast">Kahvaltı</option>
+                                        <option name="Lunch" id="Lunch">Öğle Yemeği</option>
+                                        <option name="Dinner" id="Dinner">Akşam Yemeği</option>
                                     </select>
                                 </fieldset>
                             </div>
                             <div class="col-lg-12">
                                 <fieldset>
-                                    <textarea name="message" rows="6" id="message" placeholder="Message" required=""></textarea>
+                                    <textarea name="Message" rows="6" id="message" placeholder="Özel Mesajınız" required=""></textarea>
                                 </fieldset>
                             </div>
                             <div class="col-lg-12">
                                 <fieldset>
-                                    <button type="submit" id="form-submit" class="main-button-icon">Make A Reservation</button>
+                                    <button type="submit" id="form-submit" class="main-button-icon">Rezervasyonu Oluştur</button>
                                 </fieldset>
                             </div>
                         </div>
@@ -80,4 +80,5 @@
             </div>
         </div>
     </div>
+
 </section>

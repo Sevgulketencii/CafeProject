@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CafeProject.Data;
+using CafeProject.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CafeProject.ViewComponents.Reservation
 {
@@ -6,6 +8,7 @@ namespace CafeProject.ViewComponents.Reservation
     {
         public IViewComponentResult Invoke()
         {
+
             return View();
         }
     }

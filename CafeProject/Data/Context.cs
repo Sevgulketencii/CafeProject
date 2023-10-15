@@ -11,7 +11,7 @@ namespace CafeProject.Data
         public DbSet<Chefs> ChefsDbSet { get; set; }
         public DbSet<Fotter> FotterDbSet { get; set; }
         public DbSet<Menu> MenuDbSet { get; set; }
-        public DbSet<Reservation> ReservationbSet { get; set; }
+        public DbSet<Reservations> ReservationbSet { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("server=DESKTOP-5N8R6K8;database=CafeApp;integrated security=true");
